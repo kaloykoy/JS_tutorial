@@ -107,3 +107,59 @@ console.log('john BMI is ' + bmiJB);
 
 let markHigherBMIB = bmiMB > bmiJB;
 console.log("Is mark's BMI Higher tha john? " + markHigherBMIB);
+
+
+
+//BMI CALCULATOR BASIC
+const heightMarkA = 1.69;
+const heightJohnA = 1.95;
+const weightMarkA = 78;
+const weightJohnA = 92;
+
+const heightMarkB = 1.88;
+const heightJohnB = 1.76;
+const weightMarkB = 95;
+const weightJohnB = 85;
+
+
+
+
+bmiMA = weightMarkA / (heightMarkA) ** 2;
+bmiJA = weightJohnA / (heightJohnA) ** 2;
+console.log('mark BMI is ' + bmiMA);
+console.log('john BMI is ' + bmiJA);
+
+let markHigherBMIA = bmiMA > bmiJA;
+console.log("Is mark's BMI Higher tha john? " + markHigherBMIA);
+
+bmiMB = weightMarkB / (heightMarkB) ** 2;
+bmiJB = weightJohnB / (heightJohnB) ** 2;
+console.log('mark BMI is ' + bmiMB);
+console.log('john BMI is ' + bmiJB);
+
+let markHigherBMIB = bmiMB > bmiJB;
+console.log("Is mark's BMI Higher tha john? " + markHigherBMIB);
+
+//5 falsy values: 0, '',undefined, null, NaN
+
+const money = 20;
+
+if (money) {
+
+    console.log("dont buy expensive things");
+}
+else {
+    console.log('you should get a new job!');
+}
+
+*/
+
+const age = prompt("How old are you?");
+
+if (age == 18) {
+    console.log('i can fuck her right now!');
+}
+
+else {
+    console.log(`OH no! she is ${age} i'm going to jail`)
+}
