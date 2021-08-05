@@ -1,6 +1,8 @@
 
 
-/*let year;
+/*
+
+let year;
 console.log(typeof year);
 
 year = 1987;
@@ -152,7 +154,7 @@ else {
     console.log('you should get a new job!');
 }
 
-*/
+
 
 const age = prompt("How old are you?");
 
@@ -162,4 +164,36 @@ if (age == 18) {
 
 else {
     console.log(`OH no! she is ${age} i'm going to jail`)
+}
+
+*/
+
+
+const t1s1 = Number(prompt('Team 1 Score 1:'));
+const t1s2 = Number(prompt('Team 1 score 2:'));
+const t1s3 = Number(prompt('Team 1 score 3:'));
+const avgScoreT1 = (t1s1 + t1s2 + t1s3) / 3;
+
+console.log(`Dolphins Score is: ${avgScoreT1}`);
+
+const t2s1 = Number(prompt('Team 2 Score 1:'));
+const t2s2 = Number(prompt('Team 2 score 2:'));
+const t2s3 = Number(prompt('Team 2 score 3:'));
+const avgScoreT2 = (t2s1 + t2s2 + t2s3) / 3;
+
+console.log(`Koalas Score is: ${avgScoreT2}`);
+
+
+if (avgScoreT1 >= 100 && avgScoreT1 > avgScoreT2) {
+    console.log(`Dolphins WIN! with a avg score of ${avgScoreT1}`)
+}
+else if (avgScoreT2 >= 100 && avgScoreT2 > avgScoreT1) {
+    console.log(`Koalas WIN! with a avg score of ${avgScoreT2}`)
+}
+else if (avgScoreT1 === avgScoreT2) {
+    console.log(`its a DRAW with both teams avg score of ${avgScoreT1} and ${avgScoreT2}`)
+}
+
+else {
+    console.log('No one WINS! score is below 100')
 }
